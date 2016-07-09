@@ -2,21 +2,34 @@
 
 const pcb = require('../');
 const co = require('co');
-require('should');
+const should = require('should');
 
 describe('it works', function() {
 
-  it('error', function(next) {
+  it('error', function(done) {
     const fn = co.wrap(function*() {
       throw new Error('boom');
     });
 
     const _fn = pcb(fn);
     _fn(function(err) {
-      err.should.exist();
+      should.exist(err);
       err.should.be.Error();
       err.message.should.equal('boom');
-      next();
+      done();
+    });
+  });
+
+  it('works', function(done) {
+    const fn = co.wrap(function*(x) {
+      return x + 1;
+    });
+
+    const _fn = pcb(fn);
+    _fn(1, (err, res) => {
+      should.not.exist(err);
+      res.should.equal(2);
+      done();
     });
   });
 });
