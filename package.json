@@ -26,10 +26,11 @@
   "homepage": "https://github.com/magicdawn/promise.cb#readme",
   "dependencies": {},
   "devDependencies": {
+    "co": "^4.6.0",
     "coveralls": "^2.11.9",
-    "eslint": "^2.10.1",
+    "eslint": "^3.0.1",
     "istanbul": "^0.4.3",
     "mocha": "^2.4.5",
-    "should": "^8.3.1"
+    "should": "^9.0.2"
   }
 }
