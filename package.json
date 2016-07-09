@@ -1,0 +1,35 @@
+{
+  "name": "promise.cb",
+  "version": "0.0.1",
+  "description": "transform an async function to callback style",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "test-cover": "istanbul cover _mocha -- -u exports"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/magicdawn/promise.cb.git"
+  },
+  "keywords": [
+    "cb",
+    "callback",
+    "callbackify",
+    "promisify",
+    "promise"
+  ],
+  "author": "magicdawn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/magicdawn/promise.cb/issues"
+  },
+  "homepage": "https://github.com/magicdawn/promise.cb#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "coveralls": "^2.11.9",
+    "eslint": "^2.10.1",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.4.5",
+    "should": "^8.3.1"
+  }
+}
