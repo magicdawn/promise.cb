@@ -32,4 +32,16 @@ describe('it works', function() {
       done();
     });
   });
+
+  it('error when cb is not function', function(done) {
+    const _fn = pcb(x => Promise.resolve(x));
+
+    try {
+      _fn(1, 2);
+    } catch (e) {
+      e.should.be.instanceof(TypeError);
+      e.message.should.match(/is not a function/);
+      done();
+    }
+  });
 });

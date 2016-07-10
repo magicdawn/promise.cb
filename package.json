@@ -27,6 +27,7 @@
   "dependencies": {},
   "devDependencies": {
     "co": "^4.6.0",
+    "co-mocha": "^1.1.2",
     "coveralls": "^2.11.9",
     "eslint": "^3.0.1",
     "istanbul": "^0.4.3",
