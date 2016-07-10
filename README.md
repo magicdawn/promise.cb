@@ -50,5 +50,20 @@ _fn3(cb); // log 3
 ## Changelog
 [CHANGELOG.md](CHANGELOG.md)
 
+## See Also
+
+- [promise.timeout](https://github.com/magicdawn/promise.timeout)
+- [promise.retry](https://github.com/magicdawn/promise.retry)
+- [promise.map](https://github.com/magicdawn/promise.map)
+- [promise.ify](https://github.com/magicdawn/promise.ify)
+- [promise.cb](https://github.com/magicdawn/promise.cb)
+- [promise.obj](https://github.com/magicdawn/promise.obj)
+- [promise.delay](https://github.com/magicdawn/promise.delay)
+
+## Why
+
+- `callbackify` looks good, but it's using `asyncFn.length`, so it's not working when using `co.wrap`
+- `catch(e => cb(e))` is not right, if `cb(e)` throws, it will only cause the promise reject, not throw error up
+
 ## License
 the MIT License http://magicdawn.mit-license.org
