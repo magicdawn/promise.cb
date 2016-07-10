@@ -1,6 +1,6 @@
 {
   "name": "promise.cb",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "transform an async function to callback style",
   "main": "index.js",
   "scripts": {
