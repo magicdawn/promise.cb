@@ -13,8 +13,38 @@ npm i promise.cb --save
 ```
 
 ## API
+```js
+const pcb = require('promise.cb');
+const cbFn = pcb(asyncFn);
 ```
-const promiseCb = require('promise.cb');
+
+## Example
+```js
+const pcb = require('promise.cb');
+
+async function fn1 (){
+  return 1
+}
+
+const fn2 = require('co').wrap(function*(){
+  return 2;
+});
+
+function fn3(){
+  return Promise.resolve(3);
+}
+
+const _fn1 = pcb(fn1);
+const _fn2 = pcb(fn2);
+const _fn3 = pcb(fn3);
+const cb = (err, res) => {
+  assert(!err);
+  console.log(res);
+};
+
+_fn1(cb); // log 1
+_fn2(cb); // log 2
+_fn3(cb); // log 3
 ```
 
 ## Changelog
