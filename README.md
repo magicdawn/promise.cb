@@ -1,4 +1,6 @@
 # promise.cb
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/magicdawn/promise.cb.svg)](https://greenkeeper.io/)
 > transform an async function to callback style
 
 [![Build Status](https://img.shields.io/travis/magicdawn/promise.cb.svg?style=flat-square)](https://travis-ci.org/magicdawn/promise.cb)

@@ -31,8 +31,8 @@
     "coveralls": "^2.11.9",
     "eslint": "^3.0.1",
     "istanbul": "^0.4.3",
-    "mocha": "^2.4.5",
-    "should": "^9.0.2"
+    "mocha": "^3.2.0",
+    "should": "^11.2.1"
   },
   "files": [
     "index.js",
